@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>MOONLIGHT</title>
+    <link rel="stylesheet" type="text/css" href="starlight.css">
+    <link rel="aboutme" type="text" href="aboutme.html">
+    <link rel="contactme" type="text" href="contactus.html">
+</head>
+
+<body>
+    <header>
+        <a href="https://www.instagram.com/zakirhusain__19" class="logo">ZAKIR</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https://youtube.com/@stexz3akop860">Info</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">ZAKIR HUSAIN</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Hi, There I Am Zakir Husain</h2>
+        <p>I AM STUDENT AT GANPAT UNIVERSITY (GUNI) AT GUJRAT.
+            <BR> I AM PARSUING MY B.TECH DEGREE IN COMPUTER ENGINEERING .
+            <BR> I WANT TO COMPLETE MY DEGREE IN 2026 AND BECOME I FULL STACK DEVLOPER OR WEB DEVLOPER OR GAME DEVLOPER .
+            <BR> I WANT TO LEARN MORE AND CREATE MORE THINGS AS POSSIBLE AS I CAN THE MORE WE LEARN THE MORE WE GET .
+            <BR> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nihil rerum, aliquid vel dolore natus debitis, suscipit molestiae harum perferendis quae tempore reiciendis sit mollitia consectetur sed! Praesentium, sequi voluptas!
+            <BR>
+            <BR> I AM QUICK LEARNER AS A THINK CAN TAUGHT AS I CAN READ AND LLEARN IT FAST I AM PRACTISING TO MUCH OF TYPE WRITTING BEACUSE I COMPYTER OR IT EILD SPEED IS NECESSARY AND GET THE PRESENTATION AS I COULD ME MORE POWERFULL TO IT. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Quisquam nihil harum, fuga ab facilis ad accusamus nostrum reiciendis dolorum. Ipsum doloribus officia aspernatur sed repellat id accusamus provident obcaecati explicabo. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Officiis, corporis! Similique sunt voluptatum quisquam reprehenderit magni fuga autem expedita eum ducimus! Voluptatum praesentium natus quo! Vitae vero optio magni porro.
+            <BR>
+            <BR>LOREUM
+            <BR>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nisi accusantium expedita harum hic earum dignissimos, possimus quisquam fugit odit cupiditate adipisci. Qui nisi inventore quo. Ut illo magni veritatis.<br>Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Doloribus, nemo. Asperiores necessitatibus magni ipsa! Repudiandae exercitationem temporibus deleniti vitae impedit nobis sequi veniam praesentium eum voluptatem, laudantium aut debitis nam.
+
+        </p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.left = value * 0.15 + 'px';
+            mountains_front.style.right = value * 0.05 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>
